@@ -13,6 +13,6 @@ public class Move : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left*Time.deltaTime*speed;
-        Debug.Log(transform.position);
+    
     }
 }
