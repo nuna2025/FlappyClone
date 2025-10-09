@@ -21,7 +21,7 @@ public class MakePipe : MonoBehaviour
             GameObject newpipe = Instantiate(pipe);
             newpipe.transform.position = new Vector3(6, Random.Range(-0.7f, 5.1f), 0);
             timer = 0;
-            Destroy(newpipe, 5.0f);
+            Destroy(newpipe, 10.0f);
         }
     }
 }
