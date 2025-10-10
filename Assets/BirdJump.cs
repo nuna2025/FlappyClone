@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdJump : MonoBehaviour
 {
@@ -17,5 +18,14 @@ public class BirdJump : MonoBehaviour
         {
             rb.linearVelocity = Vector2.up * jumpPower;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(Score.score > Score.bestScore)
+        {
+            Score.bestScore = Score.score;
+        }
+        SceneManager.LoadScene("GameOverScene");
     }
 }

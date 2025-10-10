@@ -8,9 +8,11 @@ public class Score : MonoBehaviour
     //private TMP_InputField inputField;
     public TextMeshProUGUI scoreText;
     public static int score = 0;
+    public static int bestScore = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // score = 0;
         //inputField = GetComponent<TMP_InputField>();
         scoreText = GetComponent<TextMeshProUGUI>();
         
