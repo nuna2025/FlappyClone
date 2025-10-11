@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // score = 0;
+        score = 0;
         //inputField = GetComponent<TMP_InputField>();
         scoreText = GetComponent<TextMeshProUGUI>();
         
